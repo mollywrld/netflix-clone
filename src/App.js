@@ -8,7 +8,6 @@ import MovieView from './components/MovieView';
 import pagenotfound from "./components/pagenotfound";
 import { Switch, Route } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
-import Action from "./components/Action";
 
 function App() {
 
@@ -39,7 +38,6 @@ function App() {
           <SearchView keyword={searchText} searchResults={searchResults} />
         </Route>
         <Route path="/movies/:id" component={MovieView} />
-        <Route path="/action" component={Action}/>
         <Route path="*" component={pagenotfound} />
       </Switch>
     </div>
